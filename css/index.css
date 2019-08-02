@@ -171,7 +171,7 @@ img {
 .nav-container {
   width: 100%;
   height: 90px;
-  border-bottom: 2px dashed silver;
+  border-bottom: 2px dashed #C0C0C0;
   display: flex;
   justify-content: center;
 }
@@ -181,6 +181,12 @@ img {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+}
+@media (max-width:500px) {
+  .nav-container .nav-section {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .nav-container .nav-section nav {
   width: 300px;
@@ -194,7 +200,7 @@ img {
 }
 .footer {
   width: 100%;
-  border-top: 2px dashed #fffcfc;
+  border-top: 2px dashed #C0C0C0;
   background: #FFEBCD;
 }
 .footer p {
@@ -202,6 +208,11 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+@media (max-width:500px) {
+  .home {
+    width: 300px;
+  }
 }
 .home .header {
   max-width: 800px;
@@ -222,13 +233,29 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width:500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    align-content: center;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width:500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -237,9 +264,19 @@ img {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width:500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+}
+@media (max-width:500px) {
+  .home .inverse-content .text-content {
+    padding-top: 4%;
+  }
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
@@ -258,10 +295,28 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width:500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
+}
 .home .content-pick .destination .btn {
-  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 80%;
+  height: 40px;
+  font-size: 2rem;
+  background-color: #17A2B8;
+  color: #FFFFFF;
 }
