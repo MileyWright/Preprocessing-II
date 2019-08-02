@@ -169,25 +169,28 @@ img {
   margin: 0 auto;
 }
 .nav-container {
-  background: #ffc0cb;
-  margin: auto;
-  padding: 20px;
+  width: 100%;
+  height: 90px;
   border-bottom: 2px dashed silver;
+  display: flex;
+  justify-content: center;
 }
 .nav-container .nav-section {
-  background: lightgray;
   display: flex;
-  flex-direction: row;
+  width: 800px;
   justify-content: space-between;
-  max-width: 800px;
-  align-content: center;
+  align-items: center;
+  height: 100%;
 }
-.nav-container .nav-section h1 {
-  background: white;
-  padding: 0 0 0 50px;
+.nav-container .nav-section nav {
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
 }
 .nav-container .nav-section nav a {
-  background: red;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #212529;
 }
 .footer {
   width: 100%;
@@ -258,4 +261,7 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background-color: pink;
 }
